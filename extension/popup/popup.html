@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PhishGuard</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../icons/icon48.png" alt="PhishGuard" />
+      <h1>PhishGuard</h1>
+    </header>
+    <main>
+      <section class="status">
+        <h2>Trạng thái hiện tại</h2>
+        <p id="verdict" class="verdict">Đang chờ...</p>
+        <p id="checked-url" class="url"></p>
+        <p id="updated-at" class="timestamp"></p>
+      </section>
+      <section>
+        <h2>Chi tiết</h2>
+        <ul id="details"></ul>
+      </section>
+    </main>
+    <footer>
+      <textarea id="report-notes" placeholder="Ghi chú khi báo cáo URL"></textarea>
+      <button id="report-button">Báo cáo URL lừa đảo</button>
+      <a href="../options/options.html" target="_blank">Cài đặt nâng cao</a>
+    </footer>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

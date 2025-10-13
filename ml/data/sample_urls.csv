@@ -1,0 +1,7 @@
+label,url
+legitimate,https://www.google.com
+legitimate,https://bank.example.com/login
+phishing,http://secure-account-update.example.net/login
+phishing,http://192.168.0.5/verify
+legitimate,https://shop.example.org/products
+phishing,https://paypal.secure-update.example.com
