@@ -1,0 +1,6 @@
+url,label,length,num_digits,num_special_chars,has_ip,contains_login_keyword
+https://accounts.google.com,true,35,2,2,false,true
+http://192.168.0.2/update-password,false,27,8,2,true,true
+https://secure-payments.example.com/dashboard,false,45,2,3,false,false
+http://free-gift-card.claim-now.biz,true,38,2,4,false,false
+https://mybank.example.com/login,false,31,1,1,false,true

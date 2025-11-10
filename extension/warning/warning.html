@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cảnh báo Phishing</title>
+    <link rel="stylesheet" href="../assets/css/warning.css" />
+  </head>
+  <body class="warning warning--danger">
+    <main class="warning__container">
+      <header class="warning__header">
+        <span class="warning__badge">Nguy hiểm</span>
+        <h1 class="warning__title">Đây có thể là trang lừa đảo</h1>
+        <p class="warning__subtitle">
+          Hệ thống phát hiện nhiều dấu hiệu bất thường. Hãy đóng trang này hoặc
+          quay lại trang trước.
+        </p>
+      </header>
+
+      <section class="warning__details">
+        <h2>Chi tiết phát hiện</h2>
+        <ul class="warning__reasons" id="warning-reasons">
+          <li>URL chứa địa chỉ IP thay vì tên miền.</li>
+          <li>Tên miền đăng ký trong vòng 30 ngày.</li>
+          <li>Từ khóa đáng ngờ: "update-password".</li>
+        </ul>
+      </section>
+
+      <footer class="warning__actions">
+        <button class="btn btn--secondary" id="proceed">Vẫn tiếp tục</button>
+        <button class="btn" id="go-back">Đóng trang</button>
+      </footer>
+    </main>
+    <script src="../assets/js/warning.js"></script>
+  </body>
+</html>
