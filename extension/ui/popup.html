@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhishGuard</title>
+    <link rel="stylesheet" href="../assets/css/popup.css" />
+  </head>
+  <body>
+    <header class="popup__header">
+      <img src="../assets/img/shield.svg" alt="Shield" class="popup__logo" />
+      <h1 class="popup__title">PhishGuard</h1>
+    </header>
+
+    <section class="popup__status" data-state="safe">
+      <h2 class="popup__status-title">Trang web hiện tại an toàn</h2>
+      <p class="popup__status-subtitle">
+        Không phát hiện dấu hiệu đáng ngờ. Luôn cảnh giác trước các yêu cầu
+        nhập thông tin nhạy cảm.
+      </p>
+    </section>
+
+    <section class="popup__details">
+      <div class="detail-card">
+        <span class="detail-card__label">Độ tin cậy</span>
+        <span class="detail-card__value" id="confidence-score">95%</span>
+      </div>
+      <div class="detail-card">
+        <span class="detail-card__label">Phân loại</span>
+        <span class="detail-card__value" id="classification">An toàn</span>
+      </div>
+    </section>
+
+    <section class="popup__actions">
+      <button id="report-btn" class="btn btn--ghost">Báo cáo URL</button>
+      <button id="view-report-btn" class="btn">Xem chi tiết</button>
+    </section>
+
+    <footer class="popup__footer">
+      <label class="toggle">
+        <input type="checkbox" id="real-time-protection" checked />
+        <span class="toggle__slider"></span>
+        <span class="toggle__label">Bảo vệ thời gian thực</span>
+      </label>
+    </footer>
+
+    <script src="../assets/js/popup.js"></script>
+  </body>
+</html>

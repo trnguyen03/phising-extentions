@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cài đặt PhishGuard</title>
+    <link rel="stylesheet" href="../assets/css/settings.css" />
+  </head>
+  <body>
+    <main class="settings">
+      <header class="settings__header">
+        <h1>Cài đặt bảo vệ</h1>
+        <p>Tinh chỉnh cách extension phát hiện và cảnh báo phishing.</p>
+      </header>
+
+      <section class="settings__panel">
+        <h2>Chế độ bảo vệ</h2>
+        <label class="switch">
+          <span>Quét tự động khi tải trang</span>
+          <input type="checkbox" id="auto-scan" checked />
+          <span class="switch__slider"></span>
+        </label>
+        <label class="switch">
+          <span>Chặn tự động các trang nguy hiểm</span>
+          <input type="checkbox" id="auto-block" />
+          <span class="switch__slider"></span>
+        </label>
+      </section>
+
+      <section class="settings__panel">
+        <h2>Nguồn dữ liệu</h2>
+        <div class="form-control">
+          <label for="api-endpoint">Địa chỉ API backend</label>
+          <input
+            type="url"
+            id="api-endpoint"
+            placeholder="https://api.phishguard.local"
+          />
+        </div>
+        <div class="form-control">
+          <label for="sensitivity">Mức độ nhạy</label>
+          <input type="range" id="sensitivity" min="1" max="3" value="2" />
+          <div class="range-labels">
+            <span>Thấp</span>
+            <span>Trung bình</span>
+            <span>Cao</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="settings__panel">
+        <h2>Danh sách trắng</h2>
+        <div class="form-inline">
+          <input type="text" id="whitelist-domain" placeholder="example.com" />
+          <button class="btn" id="add-whitelist">Thêm</button>
+        </div>
+        <ul class="chip-list" id="whitelist">
+          <li class="chip">
+            example.com
+            <button class="chip__remove" aria-label="Remove">×</button>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="settings__footer">
+        <button class="btn btn--ghost" id="reset-settings">Đặt lại</button>
+        <button class="btn" id="save-settings">Lưu thay đổi</button>
+      </footer>
+    </main>
+
+    <script src="../assets/js/settings.js"></script>
+  </body>
+</html>

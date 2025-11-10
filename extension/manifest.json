@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "PhishGuard",
+  "description": "Extension phát hiện và cảnh báo các trang phishing.",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "ui/popup.html",
+    "default_icon": {
+      "16": "assets/img/shield.svg",
+      "32": "assets/img/shield.svg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "assets/img/shield.svg",
+    "48": "assets/img/shield.svg",
+    "128": "assets/img/shield.svg"
+  },
+  "permissions": ["storage", "activeTab", "tabs", "scripting"],
+  "host_permissions": ["<all_urls>"]
+}
