@@ -1,0 +1,55 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 24px;
+  background: #f5f7fa;
+  color: #2c3e50;
+}
+
+main {
+  max-width: 480px;
+  margin: auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+section + section {
+  margin-top: 24px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+input {
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #dfe6e9;
+  font-size: 14px;
+}
+
+button {
+  background: #1abc9c;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#status-message {
+  margin-top: 12px;
+  font-size: 14px;
+}
